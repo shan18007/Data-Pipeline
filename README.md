@@ -1,6 +1,4 @@
 # Data-Pipeline
-Data pipeline with test automation
-
 ![Alt text](image-1.png)
 
 Objective: - A characteristic of data pipeline development is the frequent release of high-quality data to gain user feedback and acceptance. At the end of every data pipeline iteration, it’s expected that the data is of high quality for the next phase. Automated testing is essential for the integration testing of data pipelines.
