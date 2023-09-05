@@ -12,6 +12,8 @@ export class DisplayComponent implements OnInit {
   public barChart: any;
   public pieChart: any;
 
+  dataAvailable: boolean = false;
+
 
   constructor(private _fileUpoadService: FileUploadService) {
     console.log('constructor called..');
@@ -25,6 +27,7 @@ export class DisplayComponent implements OnInit {
         console.error('success:', response);
         console.error('success:', response.data);
         this.createPieChart(response.data);
+        this.dataAvailable=true;
       },
       (error) => {
         console.error('Error getting data :', error);
@@ -36,6 +39,7 @@ export class DisplayComponent implements OnInit {
         console.error('success:', response);
         console.error('success:', response.data);
         this.createBarChart(response.data);
+        this.dataAvailable=true;
       },
       (error) => {
         console.error('Error getting data :', error);
