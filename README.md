@@ -7,6 +7,7 @@ Problem Statement: -
 First, it takes too long and is a critical inhibitor to the frequent delivery of pipelines. Teams that rely primarily on manual testing end up postponing testing to dedicated testing periods, allowing bugs to accumulate. 
 Second, manual data pipeline testing is insufficiently reproducible for regression testing. 
 Activity: - 
+
 Stage 1: - Build a data pipeline framework consisting of several components. The element of data pipeline include:
 •	Data Sources: The origin of the data
 •	Data Ingestion: The process of collecting data from the data source.
@@ -25,5 +26,6 @@ Hadoop, Spark framework with programing language python/Scala/java, Hive as data
 •	Visual Studio Code/PyCharm/IntelliJ is used as an IDE.
 •	GitHub is used as a version control system.
 •	Any open-source Visualization tools. 
+
 Conclusion: - As test automation has quickly become an essential alternative to manual testing, more and more businesses are looking for tools and strategies to successfully implement automation. This has led to a significant growth of test automation tools based on Appium, Selenium, Katalon Studio, and many others. However, the data pipeline and data engineers, BI, and quality assurance teams must have the right programming skills to use these automation tools fully. 
 As data pipeline development capabilities continue to increase, the need for more comprehensive and modern automated data testing also increases.
