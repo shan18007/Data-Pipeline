@@ -21,6 +21,7 @@ export class DisplayComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('onInit called..');
+    this.dataAvailable = false;
 
     this._fileUpoadService.getCategoryWiseSales().subscribe(
       (response: any) => {

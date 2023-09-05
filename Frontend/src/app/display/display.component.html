@@ -1,17 +1,12 @@
 
-<div class="chart-container" *ngIf="dataAvailable; else noDataBlock">
+<div class="chart-container" [ngStyle]="{'display': dataAvailable  == true ? 'flex' : 'none' }">
 
     <div class="bar-chart">
         <canvas  id="barChart" >{{ barChart }}</canvas>
     </div>
-
 
     <div class="pie-chart">
         <canvas  id="pieChart" >{{ pieChart }}</canvas>
     </div>
 
 </div>
-
-<ng-template #noDataBlock>
-    <h2>Data not Available.!</h2>
-  </ng-template>
