@@ -14,7 +14,6 @@ export class DisplayComponent implements OnInit {
 
   dataAvailable: boolean = false;
 
-
   constructor(private _fileUpoadService: FileUploadService) {
     console.log('constructor called..');
   }
@@ -31,7 +30,9 @@ export class DisplayComponent implements OnInit {
         this.dataAvailable=true;
       },
       (error) => {
-        console.error('Error getting data :', error);
+        console
+        .error('Error getting data :', error.error.message);
+        alert(error.error.message);
       }
     );
 

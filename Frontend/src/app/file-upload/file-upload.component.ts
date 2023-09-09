@@ -31,6 +31,7 @@ export class FileUploadComponent {
           },
           error: (err: any) => {
             console.log("error: ",err);
+            alert("Invalid file");
           }
         }
         );
